@@ -1,0 +1,53 @@
+/* Стили для караоке-эффекта */
+.karaoke-container {
+    position: relative;
+    width: 100%;
+    margin: 100px 0; /* Отступы сверху и снизу */
+  }
+  
+  .karaoke {
+    position: sticky;
+    top: 50vh; /* Позиционирование по вертикали */
+    left: 0;
+    width: 85%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .karaoke span {
+    font-size: 2.5vw; /* Размер текста */
+    background: linear-gradient(to right, #555 50%, #fff 50%) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: slice;
+    line-height: 1.3;
+  }
+
+  .scramble-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .scramble-text {
+    font-size: 18px; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    white-space: nowrap; 
+    position: relative;
+  }
+  
+  .text-reveal p {
+    position: relative;
+    display: inline-block;
+    color: #333;
+  }
+  
+  .text-reveal p .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #fff;
+    overflow: hidden;
+  }

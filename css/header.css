@@ -1,0 +1,23 @@
+header{
+    width: 100%;
+    background-color: #412936;
+
+}
+
+.header-content{
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #de5337;
+}   
