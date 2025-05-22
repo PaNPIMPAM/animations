@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
             once: true,
             onEnter: () => {
                 gsap.to(text, {
-                    duration: 1.5,
+                    duration: 3,
                     scrambleText: {
                         text: originalText,
-                        chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+                        chars: "01",
                         speed: 0.7,
                         rightToLeft: false,
                         randomChars: true
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
           duration: 0.8, 
           scrambleText: {
             text: originalText, 
-            characters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", 
+            characters: "01", 
             speed: 0.7,
             tweenLength: false, 
           },

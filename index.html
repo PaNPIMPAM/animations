@@ -22,16 +22,12 @@
 <body>
     <header>
         <div class="header-content">
-
             <div class="scramble-wrapper menu">
                 <a class="scramble-text menu-link" href="">Кейсы</a>
                 <a class="scramble-text menu-link" href="">Процессы</a>
                 <a class="scramble-text menu-link" href="">Клиенты</a>
                 <a class="scramble-text menu-link" href="">Команда</a>
-
             </div>
-
-
         </div>
     </header>
     <div id="smooth-wrapper">
@@ -72,7 +68,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <!-- <div>
         <div class="fluid">
             <div class="line">В далёком лесу, где деревья шептались</div>
             <div class="line">Его рога сверкали, как звёзды, потому</div>
@@ -82,15 +78,20 @@
             <div class="line">Вместо страха она запела песенку — тихую,</div>
             <div class="line">Олень услышал и подошёл к ней.</div>
         </div>
-    </div>
+    </div> -->
 
-    
-<h3>Библиотека — это набор функций или классов, которые разработчик вызывает в своём коде. Контроль остаётся у разработчика. Например, как jQuery — подключаешь и используешь нужные методы там, где нужно.</h3>
-<h3>Фреймворк же задаёт структуру приложения. Он определяет архитектуру, и разработчик следует его правилам. Например, Angular или React (хотя React иногда называют библиотекой, но в контексте экосистемы он может выступать как фреймворк). Здесь инверсия управления: фреймворк вызывает код разработчика, а не наоборот.</h3>
-<h3>Например, библиотека — Lodash для удобной работы с данными. Фреймворк — Vue.js, который требует определённой структуры компонентов и жизненного цикла.</h3>
-<h3>библиотека как инструмент в мастерской (используешь по необходимости), фреймворк как каркас дома (задаёт основу, вокруг которой строишь).</h3>
-  <hr> 
-<h1>Alpine.js (JavaScript)</h1>
+
+    <h3>Библиотека — это набор функций или классов, которые разработчик вызывает в своём коде. Контроль остаётся у
+        разработчика. Например, как jQuery — подключаешь и используешь нужные методы там, где нужно.</h3>
+    <h3>Фреймворк же задаёт структуру приложения. Он определяет архитектуру, и разработчик следует его правилам.
+        Например, Angular или React (хотя React иногда называют библиотекой, но в контексте экосистемы он может
+        выступать как фреймворк). Здесь инверсия управления: фреймворк вызывает код разработчика, а не наоборот.</h3>
+    <h3>Например, библиотека — Lodash для удобной работы с данными. Фреймворк — Vue.js, который требует определённой
+        структуры компонентов и жизненного цикла.</h3>
+    <h3>библиотека как инструмент в мастерской (используешь по необходимости), фреймворк как каркас дома (задаёт основу,
+        вокруг которой строишь).</h3>
+    <hr>
+    <h1>Alpine.js (JavaScript)</h1>
     <h2>Для чего: Минималистичная библиотека для интерактивности в HTML</h2>
     <div x-data="{ open: false }">
         <button @click="open = !open">Показать</button>
@@ -99,19 +100,15 @@
 
     <div x-data="{ items: ['Яблоко', 'Банан', 'Апельсин', 'Апasdельсин', 'АпелZxcьsadсин' , 'АпasdеZxльсин'] }">
         <template x-for="item in items" :key="item">
-          <li x-text="item"></li>
+            <li x-text="item"></li>
         </template>
-      </div>
+    </div>
 
-<div x-data="{ email: '', isValid: true }">
-  <input 
-    type="email" 
-    x-model="email" 
-    @input="isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)"
-    :class="{ 'border-red-500': !isValid }"
-  >
-  <p x-show="!isValid" class="text-red-500">Некорректный email</p>
-</div>
+    <div x-data="{ email: '', isValid: true }">
+        <input type="email" x-model="email" @input="isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)"
+            :class="{ 'border-red-500': !isValid }">
+        <p x-show="!isValid" class="text-red-500">Некорректный email</p>
+    </div>
 
     <h1>Animate.css (CSS)</h1>
     <h2>Для чего: Готовые CSS-анимации</h2>
@@ -124,7 +121,7 @@
             <div class="swiper-slide">sdgsdgsdgsgsdgs</div>
         </div>
     </div> -->
-    
+
 
     <div class="swiper" style="width: 500px; height: 200px; background-color: white; ">
         <div class="swiper-wrapper">
@@ -136,38 +133,38 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-    
+
     <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
-    
+
     <script>
         const swiper = new Swiper('.swiper', {
             loop: true,
             speed: 500,
-            
+
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-    
+
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
     </script>
-<h1>GSAP</h1>
+    <h1>GSAP</h1>
 
 
-<div class="box" style="height: 100px; width: 100px; background-color: black;"></div>
-<script>
-    gsap.to(".box", { 
-    duration: 2, 
-    // x: 100, 
-    y:10,
-    x:10,
-    rotation: 360 
-  });
-</script>
+    <div class="box" style="height: 100px; width: 100px; background-color: black;"></div>
+    <script>
+        gsap.to(".box", {
+            duration: 2,
+            // x: 100, 
+            y: 10,
+            x: 10,
+            rotation: 360
+        });
+    </script>
     <h1>Chart.js (JavaScript)</h1>
     <canvas id="myChart"></canvas>
     <script>
